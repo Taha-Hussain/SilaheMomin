@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MianLayout"
+    android:id="@+id/amalrajablaayout"
+    android:weightSum="3">
+
+
+
+    <ScrollView style="@style/HomeScrollViewlayout"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout style="@style/HomeMainButtonLayout"
+                >
+
+                <RelativeLayout style="@style/HomeRelativelayout">
+
+                    <ImageView style="@style/HomeMainImageView"
+                        android:onClick="onClickRajabPheliRat"/>
+
+                    <TextView
+                        style="@style/HomeMainTextView"
+                        android:text="@string/amalerajab_pheliRat_button" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/HomeRelativelayout">
+
+                    <ImageView
+                        style="@style/HomeMainImageView"
+                        android:onClick="onClickTeratoPandra"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        style="@style/HomeMainTextView"
+                        android:textSize="12dp"
+                        android:text="@string/amalesrajab_tera_to_pandra_button" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/HomeRelativelayout">
+
+                    <ImageView style="@style/HomeMainImageView"
+                        android:onClick="onClickRajabShabe27"/>
+
+                    <TextView
+                        style="@style/HomeMainTextView"
+                        android:text="@string/amalerajab_shabe27_button" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/HomeRelativelayout">
+
+                    <ImageView
+                        style="@style/HomeMainImageView"
+                        android:layout_marginTop="20dp"
+                        android:onClick="onClickMushtarekaAmal"
+                        />
+
+                    <TextView
+                        style="@style/HomeMainTextView"
+                        android:textSize="12dp"
+                        android:text="@string/amalesrajab_mushtareka_button" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/HomeRelativelayout">
+
+                    <ImageView style="@style/HomeMainImageView"
+                        android:onClick="onClickZiratRajabea"/>
+
+                    <TextView
+                        style="@style/HomeMainTextView"
+                        android:textSize="12dp"
+                        android:text="@string/amalesrajab_ziarat_rajabea_button" />
+                </RelativeLayout>
+
+
+                <RelativeLayout style="@style/HomeRelativelayout">
+
+                    <ImageView style="@style/HomeMainImageView"
+                        android:onClick="onClickUmmeDawood"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        style="@style/HomeMainTextView"
+                        android:text="@string/amalesrajab_amale_umme_dawood_button"
+                        android:textSize="12dp"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.startapp.android.publish.banner.Banner
+                android:id="@+id/startAppBanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mukhtaliflayout"
+    style="@style/MianLayout"
+    android:weightSum="3">
+
+
+    <ScrollView
+        style="@style/HomeScrollViewlayout"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+
+            >
+
+            <LinearLayout style="@style/HomeMainButtonLayout">
+
+                <RelativeLayout style="@style/HomeRelativelayout">
+
+                    <ImageView
+                        style="@style/HomeMainImageView"
+                        android:onClick="onClickShabeJummah" />
+
+                    <TextView
+                        style="@style/HomeMainTextView"
+                        android:text="@string/Mukhtalif_amale_shabe_jummah" />
+                </RelativeLayout>
+                <RelativeLayout style="@style/HomeRelativelayout">
+
+                    <ImageView
+                        style="@style/HomeMainImageView"
+                        android:layout_marginTop="10dp"
+                        android:onClick="onClickRozJummah" />
+
+                    <TextView
+                        style="@style/HomeMainTextView"
+                        android:text="@string/Mukhtalif_amale_roz_jummah" />
+                </RelativeLayout>
+                <RelativeLayout style="@style/HomeRelativelayout">
+
+                    <ImageView
+                        style="@style/HomeMainImageView"
+                        android:layout_marginTop="10dp"
+                        android:onClick="onClickShabeEidFitr" />
+
+                    <TextView
+                        style="@style/HomeMainTextView"
+                        android:text="@string/Mukhtalif_amale_shabe_eid" />
+                </RelativeLayout>
+
+                <RelativeLayout style="@style/HomeRelativelayout">
+
+                    <ImageView
+                        style="@style/HomeMainImageView"
+                        android:layout_marginTop="10dp"
+                        android:onClick="onClickRozEidFitr" />
+
+                    <TextView
+                        style="@style/HomeMainTextView"
+                        android:text="@string/Mukhtalif_amale_roz_eid" />
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.startapp.android.publish.banner.Banner
+                android:id="@+id/startAppBanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
